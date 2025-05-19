@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO history(deck, offset, time)\n           VALUES (?, ?, ?)\n           ON CONFLICT (deck, offset) DO UPDATE SET time = excluded.time\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "679fe6adedae7dd414e6a60b7f9883f0a744c2fe7f5a0a729da912022fecf06b"
+}

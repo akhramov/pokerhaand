@@ -1,0 +1,30 @@
+services:
+  rust-app:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    networks:
+      - webnet
+
+  web:
+    build:
+      context: ./frontend
+    ports:
+      - "5000:5000"
+    networks:
+      - webnet
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - rust-app
+    networks:
+      - webnet
+
+networks:
+  webnet:

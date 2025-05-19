@@ -1,0 +1,32 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT offset, time as \"time!: u64\", deck as \"deck!: Uuid\"\n           FROM history\n           ORDER BY time DESC\n           LIMIT ? OFFSET ?\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "offset",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "time!: u64",
+        "ordinal": 1,
+        "type_info": "Datetime"
+      },
+      {
+        "name": "deck!: Uuid",
+        "ordinal": 2,
+        "type_info": "Null"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "c5b581a0615c30cb3702d9f271e640910247fecb5beeb47b9ef0686f384dc05b"
+}
