@@ -6,7 +6,7 @@ Et  prosjekt bestående av et Rust-basert backend-API og en Svelte-basert fronte
 
 Prosjektet tilbyr:
 
-- Et API for å lage en deterministisk kortstokk basert på UUID. Denne hånden er Flush Royal http://localhost:8080/deck/3b783e86-9390-495a-8cd0-e5a9a93032c0/hand/offset/0
+- Et API for å lage en deterministisk kortstokk basert på UUID. Denne hånden er [[http://localhost:8080/deck/3b783e86-9390-495a-8cd0-e5a9a93032c0/hand/offset/0][Flush Royal]]
 - Mulighet for å hente ut hender (5 kort om gangen) ved hjelp av offset
 - Sammenligning av pokerhender med vurdering av vinner
 - Historikk over hvilke hender som har blitt hentet
