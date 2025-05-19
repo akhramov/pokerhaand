@@ -1,5 +1,7 @@
 * Poker Deck API og Frontend
 
+[[./docs/preview.png]]
+
 Et  prosjekt bestående av et Rust-basert backend-API og en Svelte-basert frontend for å generere, bla gjennom og sammenligne pokerhender.
 
 ** Hva er dette
